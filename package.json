@@ -1,0 +1,38 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "This is just a simple food Application",
+  "main": "webpack.common.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js --open firefox",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshikurWebDev/Food-App.git"
+  },
+  "keywords": [
+    "food_app"
+  ],
+  "author": "Ashikur Rahman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AshikurWebDev/Food-App/issues"
+  },
+  "homepage": "https://github.com/AshikurWebDev/Food-App#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1",
+    "webpack-merge": "^5.7.3"
+  }
+}

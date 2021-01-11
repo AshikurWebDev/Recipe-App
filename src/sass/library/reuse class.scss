@@ -1,0 +1,38 @@
+// buttion
+@import "../variable.scss";
+
+// button
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: $color-primay;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+.btn-primay{
+    color: $color-primay;
+    background: $color-secondary;
+    transition: all 0.3s ease-in;
+}
+.btn-primay:hover{
+    background: $color-secondary_hover;
+}
+
+// Typograpy
+
+.text-center{
+    text-align: center;
+}
+
+.text-primary{
+    color: $color-primay;
+}
+
+.heading{
+    font-size: 3rem;
+    font-weight: 300;
+}

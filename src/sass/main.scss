@@ -1,0 +1,133 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:ital,wght@0,400;0,600;1,300&display=swap');
+
+// Sass file
+@import "./variable.scss";
+@import "./library/reuse\ class.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+html{
+    font-family: $font-family;
+    font-size: $font-size-sm;
+    // background-color: $color-bg;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 100px 0;
+    background-color:$color-bg;
+    overflow: auto;
+}
+// Starting the container 
+.container{
+    width: 90%;
+    height: auto;
+    // max-height: 100vh;
+    margin: 0 auto;
+
+    .brand{
+    text-align: center;
+    font-size: $font-size-lg;
+    color: $color-primay;
+    margin-bottom: 30px;
+    }
+    form{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: $secondary-color;
+    border-radius: 4px;
+
+        input{
+        width: 90%;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        font-size: $font-size-n;
+        display: inline-block;
+        }
+
+        ion-icon{
+            width: 9%;
+            font-size: 3rem;
+            margin: -9px;
+            color:rgb(75, 75, 75);
+        }
+    }
+
+    .search-result{
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        gap: 25px;
+        grid-template: auto / repeat(auto-fit,  minmax(300px, 1fr));
+
+        // item start
+        .item{
+            width: 100%;
+            border-radius: 8px;
+            background-color: rgb(37, 37, 37);
+            padding: 15px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 300px;
+                border-radius: 4px;
+            }
+
+            .flex-container{
+                display: flex;
+                align-items: center;   
+                justify-content: space-between;
+
+                  .title{
+                    width: 70%;
+                    font-family: $font-family2;
+                    color:  $color-primay;
+                    margin: 20px 10px 0;
+                    font-size: 1.8rem;
+                    font-size: 400;
+                  }
+
+                  a{
+                      width: 30%;
+                      font-size: 16px;
+                      margin-top: 20px;
+                      align-self: flex-start;
+                  }
+            }
+
+            .item-data{
+                color: $color-primay;
+                display: block;
+                margin-top: 10px;
+                font-size: 1.4rem;
+                letter-spacing: .05rem;
+                line-height: 2rem;
+                padding-left: 10px;
+            }
+            .item-data:nth-child(2n){
+                color: $color-secondary;
+            }
+          
+        }
+    }
+}
